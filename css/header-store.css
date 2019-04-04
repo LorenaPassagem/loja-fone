@@ -17,6 +17,12 @@
     color: #FFF; 
 }
 
+.header-store [type="search"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+}
+
 .header-store .-last {
     margin-right: 0; 
 }

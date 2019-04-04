@@ -16,6 +16,10 @@
     margin-bottom: 28px;
 }
 
+.description-store > .item.-star{
+    margin-bottom: 5px;
+}
+
 .description-store > .item.-info {
     width: 300px;
     text-align: right;
