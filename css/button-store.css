@@ -12,8 +12,16 @@
     margin-right: 0px;
     text-align: center;
     text-decoration: none;
-    border: none;    
+    border: none;  
+    cursor:pointer;
+    
+    transition: all 2s linear; 
 }
+
+.button-store:hover{
+    
+}
+
 
 .button-store.-second {   
    background-color: transparent;

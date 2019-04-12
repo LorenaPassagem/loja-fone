@@ -15,6 +15,8 @@
      <link rel="stylesheet" href="css/star.css">
      <link rel="stylesheet" href="css/search.css">
      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+     
+     
           
     </head>
     <body>
@@ -23,28 +25,38 @@
                 <h1 class="title">Logo</h1>               
                                 
                 <nav class="navigation">
-                    <input type="search" placeholder="Buscar">
-                    <a class="action" href="">Produtos</a> 
+                    <input type="search" placeholder="Buscar"/>
+                    
+                    <a class="action" href="">Produtos
+                        <div class="border"></div>
+                    </a> 
                     <a class="action" href="">Serviços</a>
                     <a class="action -last" href="">Carrinho (10)</a>
                 </nav>   
             </header> 
 
             <figure class="photo-product">
-                <img src="img/fone.png">
+                <img src="img/fone.png">                
             </figure>
+
+            
             <section class="wrap-product"> 
+
                 <dl class="description-store">                
                     <dt class="title">Fone top, feliz e caro</dt>
+                        <dd class="item -heart">
+                            <img class="icon" src="img/heart.png"/>
+                        </dd>
+
                         <dd class="item -star">
-                            <img class="one" src="img/star.png" alt="foto de estrela">
-                            <img class="two" src="img/star.png" alt="foto de estrela">
-                            <img class="three" src="img/star.png" alt="foto de estrela">
-                            <img class="four" src="img/star.png" alt="foto de estrela">
-                            <img class="five" src="img/star off.png" alt="foto de estrela apagada">
+                            <img  class="icon" src="img/star.png" alt="foto de estrela">
+                            <img  class="icon" src="img/star.png" alt="foto de estrela">
+                            <img  class="icon" src="img/star.png" alt="foto de estrela">
+                            <img  class="icon" src="img/star.png" alt="foto de estrela">
+                            <img  class="icon" src="img/star off.png" alt="foto de estrela apagada">
                         </dd>
                         <dd class="item">4.0 (97)</dd>
-                        <dd class="item -info">
+                        <dd class="item -info"> 
                             <strong class="contrast">Frete</strong> C$ 108</dd>                    
                         <dd class="item -info -last">
                             <strong class="contrast">Preço</strong> C$ 340</dd>
@@ -55,11 +67,14 @@
                         </dd>
                         <dd class="summary -more"><a href="" class="action">Saber mais...</a></dd>                                
                 </dl>
-            
-                <button class="button-store -second"  href="comprar.html">Adicionar ao carrinho</button>
-                
-                <a class="button-store" href="comprar.html">Comprar</a>
+                <div class="buttons">
+                    <button class="button-store -second" href="">Adicionar ao carrinho</button>
+                    
+                    <a class="button-store" href="comprar.html">Comprar</a>
+               </div>  
             </section>                   
         </div>
+
+        <script src="js/description-product.js"></script>
     </body>
 </html>

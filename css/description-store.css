@@ -16,9 +16,32 @@
     margin-bottom: 28px;
 }
 
+.description-store > .item.-heart{
+    position: absolute;       
+    transform: translateX(-100%);
+    top: 8px;
+    left: -47px;
+    cursor: pointer;
+}
+
+.description-store > .item.-active {
+    background: #fff;
+
+}
+
 .description-store > .item.-star{
     margin-bottom: 5px;
+    cursor: pointer;
 }
+
+.description-store .icon {
+    transition: transform 100ms linear;
+}
+
+ .description-store .icon:hover{
+    transform: scale(1.5);        
+ }
+
 
 .description-store > .item.-info {
     width: 300px;
@@ -29,10 +52,11 @@
     margin-bottom: 72px;
 }
 
+
 .description-store .contrast {
     text-transform: uppercase; 
     margin-right: 82px;
-    float: left;
+    float: left; 
 }
 
 .description-store > .summary {
@@ -41,6 +65,9 @@
     margin-bottom: 30px;    
 }
 
+.description-store > .summary.-more{
+    margin-bottom: 0px;
+  }
 
 .description-store .action{
     color: inherit;

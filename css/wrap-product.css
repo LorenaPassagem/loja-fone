@@ -2,4 +2,29 @@
     display: inline-block;
     width: 554px;
     vertical-align: middle;
+    position: relative;
 }
+
+.wrap-product > .buttons {
+    position: absolute;
+    bottom: 0; 
+    transform: translateY(calc(100% + 98px));
+    cursor:pointer;
+}
+
+.button-store:hover {
+    background-color: #fff;
+    color:#252c41;
+}
+
+.button-store.-second:hover {
+    background: #FFF;
+    color:#e24647;
+    
+ }
+
+.wrap-product > .item.-heart {
+    transform: translateY(120%) translateX(-15%);
+    cursor:pointer;
+ }
+

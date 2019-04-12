@@ -10,17 +10,25 @@
     text-transform: uppercase;
 }
 
+
 .header-store .action {
+    display: inline-block;
     text-decoration: none;    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFF;
     margin-right: 60px;   
-    color: #FFF; 
+    padding-bottom: 8px;  
 }
 
 .header-store [type="search"] {
     background: transparent;
+    font-family: Arial, "Roboto", sans-serif;
+    font-size: 20px;
     border: none;
     border-bottom: 1px solid #FFF;
+    color: inherit;
+    margin-right: 65px;
+    padding: 8px;
+    width: 358px;     
 }
 
 .header-store .-last {
@@ -30,5 +38,6 @@
 .header-store > .navigation {
     float: right;
     font-size: 21px;
-    color: #FFF;    
+    color: #FFF;        
 }
+
