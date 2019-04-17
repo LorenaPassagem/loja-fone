@@ -24,24 +24,51 @@
     cursor: pointer;
 }
 
+/*---Explicação: quando tiver um item ativo esse ganhara um comportamento ---*/
 .description-store > .item.-active {
-    background: #fff;
-
+    
 }
+
+
+/*----------^^--------------------------------------*/
 
 .description-store > .item.-star{
     margin-bottom: 5px;
     cursor: pointer;
 }
 
-.description-store .icon {
-    transition: transform 100ms linear;
-}
+/*-----------Interação com o coração Daqui----------*/
+ .description-store .icon.-active {
+    display: none; 
+}  
 
- .description-store .icon:hover{
-    transform: scale(1.5);        
+/*---------------
+Quando o item colorido estiver ativo o item transparente 
+deve estar oculto */
+ .description-store > .item.-active .icon {
+    display: none;
+ }  
+ 
+/*quando o item colorido estiver ativo esse tera um display block*/
+ .description-store > .item.-active .icon.-active {
+    display: block;
+ }
+/*---------^^----------Até aqui--------------*/
+
+ .description-store .star {
+     display: inline-block;
  }
 
+ .description-store .star.-active > .icon{
+    display: none;
+ }
+
+
+ .description-store .star.-active > .-active{
+    display: block;
+ }
+
+/*-------------------------------------------------*/
 
 .description-store > .item.-info {
     width: 300px;
