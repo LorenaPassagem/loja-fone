@@ -9,6 +9,7 @@
 .description-store > .title {
     font-size: 25px;
     margin-bottom: 60px;
+    margin-left: 60px;
 }
 
 .description-store > .item {
@@ -20,7 +21,7 @@
     position: absolute;       
     transform: translateX(-100%);
     top: 8px;
-    left: -47px;
+    left: -47px; 
     cursor: pointer;
 }
 
@@ -101,4 +102,11 @@ deve estar oculto */
     text-decoration: none;
     margin-top: 20px;
 }
+ /* não esta funcioando talves esteja faltando codigo referente a reponsividade */
+ @media(max-width: 1254px){
+  .description-store > .item.-heart {
+     left: auto;
+     transform: none;
+ }
 
+}

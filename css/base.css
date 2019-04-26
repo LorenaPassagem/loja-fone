@@ -5,3 +5,10 @@ body {
     background: #252a34;
     background-image: linear-gradient(to top, #FF2E63, #252a34)
 }
+
+
+@media (max-width: 355px){
+    body {
+        overflow-x: hidden;
+    }
+   }

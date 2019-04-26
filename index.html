@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="css/base.css">
      <link rel="stylesheet" href="css/container-store.css">
      <link rel="stylesheet" href="css/header-store.css">
+     <link rel="stylesheet" href="css/input-search.css">
      <link rel="stylesheet" href="css/photo-product.css">
      <link rel="stylesheet" href="css/wrap-product.css">
      <link rel="stylesheet" href="css/button-store.css">
@@ -15,24 +16,26 @@
      <link rel="stylesheet" href="css/star.css">
      <link rel="stylesheet" href="css/search.css">
      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
-     
-     
-          
     </head>
     <body>
         <div class="container-store">
-            <header class="header-store">
-                <h1 class="title">Logo</h1>               
-                                
+            <header class="header-store">                                     
+                <h1 class="title">Logo</h1>
+
                 <nav class="navigation">
-                    <input type="search" placeholder="Buscar"/>
-                    
-                    <a class="action" href="">Produtos
-                        <div class="border"></div>
-                    </a> 
-                    <a class="action" href="">Serviços</a>
-                    <a class="action -last" href="">Carrinho (10)</a>
-                </nav>   
+                    <form class="input-search">
+                        <input class="content" type="search" placeholder="Buscar"/> 
+                        <input  type="image" class="icon -open -active" src="img/icon search.svg"/>
+                        <input type="image" class="icon -close"  src="img/close.svg"/>
+                   </form>
+                   
+                   <ul id="menu" class="list">
+                      <li class="item -menu" href="#menu"> Menu</li> 
+                      <li class="item"><a class="action" href="">Produtos</a></li>
+                      <li class="item"><a class="action" href="">Serviços</a></li>
+                      <li class="item -last"><a class="action" href="">Carrinho (10)</a></li>
+                    </ul>
+                    </nav>   
             </header> 
 
             <figure class="photo-product">
@@ -99,5 +102,7 @@
 
         <script src="js/description-product.js"></script>
         <script src="js/home.js"></script>
+        <script src="js/input-search.js"> </script>
+        <script src="js/menu.js"></script>
     </body>
 </html>

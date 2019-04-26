@@ -10,23 +10,19 @@
 /*Parte que implementa interatividade com o coração */
  const $heart = document.querySelector (".-heart");
 
- $heart.addEventListener('click', clickHeart);
+ $heart.addEventListener('click', handleClick);
 
- function clickHeart(){ 
-//    if( $heart.classList.contains("-active")) {    
-//       $heart.classList.remove('-active');
-//    }else{
-//       $heart.classList.add('-active'); 
-//   }
-   $heart.classList.toggle("-active");
-}
+
 
 //Interação com as estrelas----------------------------
-    const $star = document.querySelector(".star"); 
+    const $stars = document.querySelectorAll(".star"); 
 
-    $star.addEventListener('click', clickStar);    
-   
-    function clickStar(){
-        $star.classList.toggle("-active");
-        
-    }
+    // $stars.forEach(function($star) {
+    //     $star.addEventListener('click', handleClick);
+    // });       
+  
+
+//------Functions----------------------------
+    function handleClick(){              
+        this.classList.toggle("-active");
+     }
